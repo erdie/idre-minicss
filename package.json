@@ -1,0 +1,31 @@
+{
+  "name": "idre-minicss",
+  "version": "0.0.1",
+  "description": "Simple and Mini CSS Framework, build for performance.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erdie/idre-minicss.git"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "js",
+    "idre",
+    "minicss"
+  ],
+  "author": "Erdiawan Anna",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erdie/idre-minicss/issues"
+  },
+  "homepage": "https://github.com/erdie/idre-minicss#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
