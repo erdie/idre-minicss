@@ -131,7 +131,7 @@
   @media only screen and (min-width: 600px) and (max-width: 1024px) {
     .content:after {
       content: 'tablet'; } }
-  @media only screen and (min-width: 1366px) {
+  @media only screen and (min-width: 1366px) and (max-width: 1367px) {
     .content:after {
       content: 'desktop'; } }
 
@@ -174,11 +174,11 @@
     max-width: calc(100% / (12/12)); }
   .title {
     font-size: 1.5em; }
-  .title {
+  .heading {
     font-size: 1.5em; }
-  .title {
+  .sub-heading {
     font-size: 1.125em; }
-  .title {
+  .text {
     font-size: 0.875em; }
   .content {
     background-color: red;
@@ -234,9 +234,9 @@
     max-width: calc(100% / (12/12)); }
   .title {
     font-size: 1.75em; }
-  .title {
-    font-size: 1.5em; }
-  .title {
+  .heading {
+    font-size: 1.75em; }
+  .sub-heading {
     font-size: 1.3125em; }
   .content {
     background-color: blue;
@@ -253,7 +253,7 @@
       top: 16px;
       right: 16px; } }
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 1366px) and (max-width: 1367px) {
   .item .d\:item__1 {
     flex: 0 0 calc(100% / (12/1));
     max-width: calc(100% / (12/1)); }
@@ -292,11 +292,11 @@
     max-width: calc(100% / (12/12)); }
   .title {
     font-size: 2.625em; }
-  .title {
+  .heading {
     font-size: 2.625em; }
-  .title {
+  .sub-heading {
     font-size: 2em; }
-  .title {
+  .text {
     font-size: 1.125em; }
   .content {
     background-color: green;

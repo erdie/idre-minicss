@@ -1,6 +1,7 @@
 $phone-resolution : 600px
 $tablet-resolution : 1024px
-$desktop-resolution : 1366px
+$desktop-min-resolution : 1366px
+$desktop-max-resolution : 1367px
 
 =respond($media)
     @if $media == 'phone'
@@ -12,5 +13,5 @@ $desktop-resolution : 1366px
             @content
     
     @else if $media == 'desktop'
-        @media only screen and (min-width: $desktop-resolution)
+        @media only screen and (min-width: $desktop-min-resolution) and (max-width: $desktop-max-resolution)
             @content

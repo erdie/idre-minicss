@@ -1,7 +1,6 @@
-@import breakpoints
 $space-base : 15px
 
-// Lebar dari grid
+// Grid width
 =columns($col)
     flex: 0 0 calc(100% / (12/#{$col}))
     max-width: calc(100% / (12/#{$col}))
@@ -15,13 +14,13 @@ $space-base : 15px
     >[classˆ=item__]
         padding: 0 $space-base
 
-    //jumlah grid
+    //number of grids
     @for $items from 1 through 12
         $item : $items * 1
         .item__#{$item}
             @include columns($item)
 
-//grid handphone
+//grid based on screensize
 @mixin item--phone()
     .item
         @for $items from 1 through 12
