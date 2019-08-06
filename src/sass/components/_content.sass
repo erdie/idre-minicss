@@ -1,0 +1,27 @@
+@import grid
+@import typography
+@import breakpoints
+
+.content
+    background-color: green
+    color: #fff
+    min-height: 300px
+    margin-bottom: 24px
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center 
+    &:after
+        content: 'desktop'
+        position: absolute 
+        top: 16px
+        right: 16px
+    @include respond(phone)
+        &:after
+            content: 'phone'
+    @include respond(tablet)
+        &:after
+            content: 'tablet'
+    @include respond(desktop)
+        &:after
+            content: 'desktop'

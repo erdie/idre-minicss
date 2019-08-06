@@ -4,6 +4,7 @@
   "description": "Simple and Mini CSS Framework, build for performance.",
   "main": "index.js",
   "scripts": {
+    "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

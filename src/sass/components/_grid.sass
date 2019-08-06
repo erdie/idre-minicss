@@ -1,0 +1,53 @@
+@import breakpoints
+$space-base : 15px
+
+// Lebar dari grid
+=columns($col)
+    flex: 0 0 calc(100% / (12/#{$col}))
+    max-width: calc(100% / (12/#{$col}))
+
+.item
+    display: flex
+    flex-wrap: wrap
+    margin-left: -$space-base
+    margin-right: -$space-base
+
+    >[classˆ=item__]
+        padding: 0 $space-base
+
+    //jumlah grid
+    @for $items from 1 through 12
+        $item : $items * 1
+        .item__#{$item}
+            @include columns($item)
+
+//grid handphone
+@include respond(phone)
+    margin: 0
+    >[classˆ=item__]
+        padding: 0 $space-base
+
+    @for $items from 1 through 12
+        $item : $items * 1
+        .m\:item__#{$item}
+            @include columns($item)
+
+@include respond(tablet)
+    margin: 0
+    >[classˆ=item__]
+        padding: 0 $space-base
+
+    @for $items from 1 through 12
+        $item : $items * 1
+        .t\:item__#{$item}
+            @include columns($item)
+
+@include respond(desktop)
+    margin: 0
+    >[classˆ=item__]
+        padding: 0 $space-base
+
+    @for $items from 1 through 12
+        $item : $items * 1
+        .d\:item__#{$item}
+            @include columns($item)

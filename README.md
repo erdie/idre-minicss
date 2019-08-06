@@ -1,6 +1,6 @@
 # Idre MiniCSS
 
-Simple and Mini CSS Framework, build for performance
+Idre --> Erdi, Mini and Simple CSS Framework for personal use, build for performance. You can fork if you want
 
 ## Install and Run
 ```bash

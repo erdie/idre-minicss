@@ -26,7 +26,7 @@ function watch() {
             baseDir: './src'
         }
     });
-    gulp.watch(['src/sass/*.sass', 'src/sass/pages/*.sass', 'src/sass/components/*.sass'], style);
+    gulp.watch(['src/sass/*.sass', 'src/sass/components/*.sass'], style);
     gulp.watch('src/*.html').on('change', browserSync.reload);
     gulp.watch('src/js/*.js').on('change', browserSync.reload);
 }
