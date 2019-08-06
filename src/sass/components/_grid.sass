@@ -22,32 +22,23 @@ $space-base : 15px
             @include columns($item)
 
 //grid handphone
-@include respond(phone)
-    margin: 0
-    >[classˆ=item__]
-        padding: 0 $space-base
+@mixin item--phone()
+    .item
+        @for $items from 1 through 12
+            $item : $items * 1
+            .m\:item__#{$item}
+                @include columns($item)
 
-    @for $items from 1 through 12
-        $item : $items * 1
-        .m\:item__#{$item}
-            @include columns($item)
+@mixin item--tablet()
+    .item
+        @for $items from 1 through 12
+            $item : $items * 1
+            .t\:item__#{$item}
+                @include columns($item)
 
-@include respond(tablet)
-    margin: 0
-    >[classˆ=item__]
-        padding: 0 $space-base
-
-    @for $items from 1 through 12
-        $item : $items * 1
-        .t\:item__#{$item}
-            @include columns($item)
-
-@include respond(desktop)
-    margin: 0
-    >[classˆ=item__]
-        padding: 0 $space-base
-
-    @for $items from 1 through 12
-        $item : $items * 1
-        .d\:item__#{$item}
-            @include columns($item)
+@mixin item--desktop()
+    .item
+        @for $items from 1 through 12
+            $item : $items * 1
+            .d\:item__#{$item}
+                @include columns($item)

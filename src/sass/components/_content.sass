@@ -25,3 +25,51 @@
     @include respond(desktop)
         &:after
             content: 'desktop'
+
+@mixin content--phone()
+    .content
+        background-color: red
+        color: #fff
+        min-height: 300px
+        margin-bottom: 24px
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center 
+        &:after
+            content: 'phone'
+            position: absolute 
+            top: 16px
+            right: 16px
+
+@mixin content--tablet()
+    .content
+        background-color: blue
+        color: #fff
+        min-height: 300px
+        margin-bottom: 24px
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center 
+        &:after
+            content: 'tablet'
+            position: absolute 
+            top: 16px
+            right: 16px
+
+@mixin content--desktop()
+    .content
+        background-color: green
+        color: #fff
+        min-height: 300px
+        margin-bottom: 24px
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center 
+        &:after
+            content: 'desktop'
+            position: absolute 
+            top: 16px
+            right: 16px

@@ -1,1 +1,27 @@
-@import components/content
+@import components/breakpoints
+@import components/grid
+@import components/typography
+@import components/content 
+
+@include respond(phone)
+    @include item--phone()
+    @include title--phone()
+    @include heading--phone()
+    @include sub-heading--phone()
+    @include text--phone()
+    @include content--phone()
+
+@include respond(tablet)
+    @include item--tablet()
+    @include title--tablet()
+    @include heading--tablet()
+    @include sub-heading--tablet()
+    @include content--tablet()
+
+@include respond(desktop)
+    @include item--desktop()
+    @include title--desktop()
+    @include heading--desktop()
+    @include sub-heading--desktop()
+    @include text--desktop()
+    @include content--desktop()

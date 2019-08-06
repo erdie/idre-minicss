@@ -5,36 +5,86 @@ $base-context: 16
 @function em($px, $context: $base-context)
     @return #{$px/$context}em 
 
+// .title
+//     font-size: em(32)
+//     @include respond(phone)
+//         font-size: em(24)
+//     @include respond(tablet)
+//         font-size: em(28)
+//     @include respond(desktop)
+//         font-size: em(42)
+
+// .heading
+//     font-size: em(24)
+//     @include respond(phone)
+//         font-size: em(18)
+//     @include respond(tablet)
+//         font-size: em(21)
+//     @include respond(desktop)
+//         font-size: em(32)
+
+// .sub-heading
+//     font-size: em(21)
+//     @include respond(phone)
+//         font-size: em(18)
+//     @include respond(tablet)
+//         font-size: em(20)
+//     @include respond(desktop)
+//         font-size: em(28)
+
+// .text
+//     font-size: em(16)
+//     @include respond(phone)
+//         font-size: em(14)
+//     @include respond(desktop)
+//         font-size: em(18)
+
+
+//title
 .title
     font-size: em(32)
-    @include respond(phone)
+@mixin title--phone()
+    .title
         font-size: em(24)
-    @include respond(tablet)
+@mixin title--tablet()
+    .title
         font-size: em(28)
-    @include respond(desktop)
+@mixin title--desktop()
+    .title
         font-size: em(42)
 
+//heading
 .heading
     font-size: em(24)
-    @include respond(phone)
-        font-size: em(18)
-    @include respond(tablet)
-        font-size: em(21)
-    @include respond(desktop)
-        font-size: em(32)
+@mixin heading--phone()
+    .title
+        font-size: em(24)
+@mixin heading__tablet()
+    .title
+        font-size: em(24)
+@mixin heading--desktop()
+    .title
+        font-size: em(42)
 
+//sub-heading
 .sub-heading
     font-size: em(21)
-    @include respond(phone)
+@mixin sub-heading--phone()
+    .title
         font-size: em(18)
-    @include respond(tablet)
-        font-size: em(20)
-    @include respond(desktop)
-        font-size: em(28)
+@mixin sub-heading--tablet()
+    .title
+        font-size: em(21)
+@mixin sub-heading--desktop()
+    .title
+        font-size: em(32)
 
+//text
 .text
     font-size: em(16)
-    @include respond(phone)
+@mixin text--phone()
+    .title
         font-size: em(14)
-    @include respond(desktop)
+@mixin text--desktop()
+    .title
         font-size: em(18)
